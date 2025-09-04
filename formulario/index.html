@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>formulario</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Mi Empresa De Servicios </h1>
+            <p>Solicita una cotizacion para tu proximo proyecto</p>
+        </div>
+
+    </header>
+    <nav>
+        <a href="#precio">Precio</a>
+        <a href="#formulario">Formulario</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="precios">
+                <h2>Tabla de Precios</h2>
+                <table>
+                    <tr>
+                        <th>Servicios</th>
+                        <th>Descripcion</th>
+                        <th>Precios</th>
+                    </tr>
+                    <tr>
+                        <td>Diseño web</td>
+                        <td>Diseño profesional para tu sitio web</td>
+                        <td>1'000.000 COP</td>
+                    </tr>
+                    <tr>
+                        <td>Mantenimineto de PC</td>
+                        <td>Se te dara un mantenimiento de forma completa a tu equipo</td>
+                        <td>90.000 COP</td>
+                    </tr>
+                    <tr>
+                        <td>Servicio de Seo </td>
+                        <td>optimisacion de tu sitio web</td>
+                        <td>800.000 COP</td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section id="formulario">
+                <h2>Formulario de Cotizacion</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacion de Ubicacion </legend>
+                        <label for="departamento">Departamento</label>
+                        <select name="departamento" id="departamento">seleccione su departamento
+                            <option value="amazonas">amazonas</option>
+                            <option value="antioquia">antioquia</option>
+                            <option value="tolima">tolima</option>
+                            <option value="nariño">nariño</option>
+                            <option value="cundinamarca">cundinamarca</option>
+                            <option value="santander">santander</option>
+                            <option value="valle del cauca">valle del cauca</option>
+
+                        </select>
+                        <label for="ciudad">Ciudad</label>
+                        <select name="ciudad" id="ciudad" required>
+                            <option value="">seleccione una cuidad </option>
+                            <option value="bogota">bogota</option>
+                            <option value="medellin">medellin</option>
+                            <option value="ibague">ibague</option>
+                            <option value="cali">cali</option>
+                            <option value="cartagena ">cartagena</option>
+                            <option value="barranquilla">barranquilla</option>
+
+                        </select>
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>detalles del Servicio</legend>
+                        <label for="Servicio">Servicio</label>
+                        <select name="Servicio" id="servicio" required>
+                            <option value="">selecione un servicio</option>
+                            <option value="diseño web">diseño web </option>
+                            <option value="mantenimiento de equipos ">mantenimiento de equipo</option>
+                            <option value="Seo">servicio de seo</option>
+
+                        </select>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea name="descripcion" id="descripcion" rows="6"></textarea>
+
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </section>
+        </main>
+
+        <aside>
+            <h2>nuestros servicios </h2>
+            <div class="card">
+                <img width="100" height="100" src="img/photo-1509718443690-d8e2fb3474b7.avif" alt="Diseño web">
+                <div class="card-content">
+                    <h3>Diseño Web</h3>
+                    <p>diseño profesional para tu sitio web</p>
+                </div>
+            </div>
+            <h2>nuestros servicios </h2>
+            <div class="card">
+                <img width="100" height="100" src="img/photo-1581092918056-0c4c3acd3789.avif" alt="Mantenimineto de pc">
+                <div class="card-content">
+                    <h3>mantenimiento de pc</h3>
+                    <p>mantenimineto a tu pc</p>
+                </div>
+            </div>
+            <h2>nuestros servicios </h2>
+            <div class="card">
+                <img width="100" height="100" src="img/photo-1562577309-2592ab84b1bc.avif" alt="servicio de seo">
+                <div class="card-content">
+                    <h3>servicio de seo</h3>
+                    <p>optimisacion de tu sitio Web</p>
+                </div>
+            </div>
+
+            
+
+        </aside>
+        <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>sobre nosotros </h4>
+                        <p>somos una empresa dedicada a la creacion de sitios web </p>
+
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <p>email: andersoncelemina@gmail.com</p>
+                        <p>Telefono: </p>
+
+                    </div>
+                </div>
+               <div class="footer-bottom">
+                    <p>&copy; 2025 mi empresa de servicios. todos los derechos reservados.</p>
+
+                </div> 
+            </footer>
+
+
+    </div>
+   
+
+</body>
+
+</html>
