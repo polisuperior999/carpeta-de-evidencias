@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <title>Document</title>
+    <style>
+        /* Animación para imágenes de productos */
+        .product-card img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.08) rotate(-2deg);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Motorcycle Accessories</div>
+            <nav class="main-nav">
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contactos</a>
+                <a href="reserva" class="btn btn-secundary">Reserva ahora</a>
+
+
+            </nav>
+        </div>
+    </header>
+    
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Descubre</h1>
+                <p>Descubre nuestros productos</p>
+                <a href="#Productos" class="btn btn-primary">Explora nuestros Productos</a>
+
+            </div>
+        </section>
+        <!-- hacia abajo echo en casa-->
+
+
+
+        <div class="product-grid">
+            <article class="product-card">
+                <img src="https://http2.mlstatic.com/D_Q_NP_611550-CBT80136006890_112024-O.webp" alt="">
+                <h3>Espejos aleron </h3>
+                <p class="col-p">Espejos en forma de Alerón para motos,adaptables a cualquier estilo de moto</p>
+                <p class="col-p">Precio 110.000 COP</p>
+                <p class="col-p">Precio 28 USD</p>
+
+            </article>
+            <article class="product-card">
+                <img src="https://inducascos.vtexassets.com/arquivos/ids/1806037/MALETERO-RIGIDO-TOMCAT-48-LT-Negro.jpg?v=638865697252570000"alt="">
+                <h3>Maletero</h3>
+                <p class="col-p">Maletero rígido Tomcat de 48 litros, aúl para motocicleta diseñado para combinar capacidad, seguridad y un diseño aerodinámico, ideal tanto para viajes largos como para el uso diario en la ciudad</p>
+                <p class="col-p">Precio 382.000 COP</p>
+                <p class="col-p">Precio 98 USD</p>
+                
+            </article>
+            <article class="product-card">
+                <img src="https://acdn-us.mitiendanube.com/stores/001/098/335/products/d_nq_np_813652-mco69209844763_052023-o1-b455bb78a183e39f7e16959419506788-640-0.webp" alt="">
+                <h3>Soporte de celular para moto</h3>
+                <p class="col-p">Soporte de celular universal de buena calidad para moto, ajustable y fácil de instalar.</p>
+                <p class="col-p">Precio 35.000 COP</p>
+                <p class="col-p">Precio 9 USD</p>
+
+            </article>
+        </div>
+         <section id="formulario">
+                <h2>Formulario de Cotizacion</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacion de Ubicacion </legend>
+                        
+                        <label for="departamento">Departamento</label>
+                        <select name="departamento" id="departamento">
+                            <option value="">seleccione su departamento</option>
+                            <option value="amazonas">amazonas</option>
+                            <option value="antioquia">antioquia</option>
+                            <option value="tolima">tolima</option>
+                            <option value="nariño">nariño</option>
+                            <option value="cundinamarca">cundinamarca</option>
+                            <option value="santander">santander</option>
+                            <option value="valle del cauca">valle del cauca</option>
+
+                        </select>
+                        <label for="ciudad">Ciudad</label>
+                        <select name="ciudad" id="ciudad" required>
+                            <option value="">seleccione una cuidad </option>
+                            <option value="bogota">bogota</option>
+                            <option value="medellin">medellin</option>
+                            <option value="ibague">ibague</option>
+                            <option value="cali">cali</option>
+                            <option value="cartagena ">cartagena</option>
+                            <option value="barranquilla">barranquilla</option>
+
+                        </select>
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </fieldset>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </section>
+        </div>
+        
+    </main>
+    <footer id="contacto">
+            <p>&copy;2025 Motorcycle Accessories. Todos los derechos reservados.</p>
+            <p class="smal">Contacto: <a ref="tel:3214599853">3214599853</a></p>
+            <p class="smal">Email: <a ref="mailto:celemincorderoa@gmail.com">celemincorderoa@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
